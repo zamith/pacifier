@@ -1,6 +1,11 @@
 # Pacifier
 
-TODO: Write a gem description
+Pacifier catches all server errors and instead of showing the standard 500.html page it redirects the user to the root_path, adding a nice message to the flash and logging what happened.
+
+### Future Work
+
+* Configurable attributes such as the path of redirection, the message to show the user, etc...
+* Sending an email to the dev and/or support team
 
 ## Installation
 
@@ -18,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simply `include Pacifier` in ApplicationController (or any other controller you want).
 
 ## Contributing
 
